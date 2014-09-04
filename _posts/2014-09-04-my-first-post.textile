@@ -11,3 +11,17 @@ tags: [blog]
 This seems pretty good.
 
 
+Even Mr. Sedaris, a noted luddite, has finally succumbed to doing his writing on a computer.  The Internet, however, remains an idiotic trifle:
+
+bq. I've never seen the Internet. I don't have email. I just enjoy lying on the couch and reading a magazine. When people say, "You should visit my Web page," I'm always perplexed by it. Why? What do you do there?
+
+Haven't we all pondered that at one time or another?
+
+h1. This is a Heading 1
+
+This might be an introductory paragraph on the general topic.
+
+h2. Heading 2 gets more specific
+
+Now we're getting into the details.
+
