@@ -11,19 +11,21 @@ now the stable version of debian is 'wheezy', its former release is 'squeeze'.
 
 a common way to upgrade from one debian release to another is
 
-1. clear the original release
+h3. 1. clear the original release
 
+<pre>
   apt-get update  # update the original package 
   apt-get upgrade # finish this to make a clear base to real upgrade
   apt-get dist-upgrade
+</pre>
 
-2. make sure it is ready
+h3. 2. make sure it is ready
 
-  aptitude
+  @aptitude@
 
 just press 'g', let it run by itself to clear all not finished task
 
-3. change the /etc/apt/source.list to the next release name
+h3. 3. change the /etc/apt/source.list to the next release name
 
 we cannot jump over some release typically, well, I did not try this.
 
