@@ -9,7 +9,7 @@ tags: [debian]
 
 now the stable version of debian is 'wheezy', its former release is 'squeeze'.
 
-a common way to upgrade from one debian release to another is
+Here might be a common way to upgrade from one debian release to another.
 
 h3. 1. clear the original release
 
@@ -29,5 +29,5 @@ h3. 3. change the /etc/apt/source.list to the next release name
 
 we cannot jump over some release typically, well, I did not try this.
 
-repeat the step 1.
+h3. 4. repeat the step 1.
 
