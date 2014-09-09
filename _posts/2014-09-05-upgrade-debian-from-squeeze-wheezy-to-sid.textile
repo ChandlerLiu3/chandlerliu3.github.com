@@ -1,0 +1,33 @@
+---
+layout: post
+title: "upgrade debian from squeeze, wheezy to sid"
+description: ""
+category: 
+tags: [debian]
+---
+{% include JB/setup %}
+
+now the stable version of debian is 'wheezy', its former release is 'squeeze'.
+
+Here might be a common way to upgrade from one debian release to another.
+
+h3. 1. clear the original release
+
+<pre>
+  apt-get update  # update the original package 
+  apt-get upgrade # finish this to make a clear base to real upgrade
+  apt-get dist-upgrade
+</pre>
+
+h3. 2. make sure it is ready
+
+  @aptitude@
+
+just press 'g', let it run by itself to clear all not finished task
+
+h3. 3. change the /etc/apt/source.list to the next release name
+
+we cannot jump over some release typically, well, I did not try this.
+
+h3. 4. repeat the step 1.
+
