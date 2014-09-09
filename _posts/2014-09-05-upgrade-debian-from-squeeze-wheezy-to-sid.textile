@@ -7,7 +7,10 @@ tags: [debian]
 ---
 {% include JB/setup %}
 
-now the stable version of debian is 'wheezy', its former release is 'squeeze'.
+Now, the stable version of debian is 'wheezy', its former release is 'squeeze'.
+The purpose for me to upgrade my debian, from squeeze, wheezy to testing (sid),
+is to install jekyll which depends on the Ruby 1.9.2 or newer.
+And I found neither squeeze nor wheezy support the correct Ruby version.
 
 Here might be a common way to upgrade from one debian release to another.
 
