@@ -13,4 +13,5 @@
   {% include custom/comments %}
 {% endcase %}
 
+  {% include JB/comments-providers/changeyan %}
 {% endif %}
