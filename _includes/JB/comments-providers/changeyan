@@ -12,4 +12,4 @@
     h.insertBefore(s,h.firstChild);
     window.SCS_NO_IFRAME = true;
   })()
-</script>    
+</script>
