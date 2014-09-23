@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Java has finally got lambda on the 8th version"
+description: ""
+category: 
+tags: []
+---
+{% include JB/setup %}
+
+It does not have a function pointer, instead, everything is object.
+When need to provide a callback, prvoide an object that implemented some kinda interface.
+
+The produced many design patterns and someone can even write a book.
+Not saying the design pattern is not necessary, however, it can be simplified a lot with a lambda function.
+
+Let's take the strategy pattern as an example, we can easily inject some 'strategy' with lambda,
+with no more class to be defined.
+
+We can also simplify the state patter with a 2 dimension hash table:
+
+ 1. (state name -> a hash table), the table holds the input under a certain state.
+ 2. (impulse -> a lambda function)
+
+We can strip the design patterns with lambda, so that we will not be bothered by the redudant patterns.
+
+
