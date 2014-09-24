@@ -2,7 +2,7 @@
 layout: post
 title: "Java has finally got lambda on the 8th version"
 description: ""
-category: 
+category:
 tags: []
 ---
 {% include JB/setup %}
@@ -27,481 +27,477 @@ We can strip the design patterns with lambda, so that we will not be bothered by
 h2. Creational patterns
 
 h3. Abstract factory
-Provide an interface for creating families of related or dependent objects without specifying their concrete classes. 
 
-Yes 
+Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
-Yes 
+h3. Builder
 
-N/A
-Builder 
+Separate the construction of a complex object from its representation,
+allowing the same construction process to create various representations.
 
-Separate the construction of a complex object from its representation, allowing the same construction process to create various representations. 
 
-Yes 
+h3. Factory method
 
-No 
+Define an interface for creating a single object,
+ but let subclasses decide which class to instantiate.
+ Factory Method lets a class defer instantiation to subclasses (dependency injection[15]).
 
-N/A
+Yes
 
-h3. Factory method 
-Define an interface for creating a single object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses (dependency injection[15]). 
-
-Yes 
-
-Yes 
+Yes
 
 N/A
 
 h3. Lazy initialization
-Tactic of delaying the creation of an object, the calculation of a value, or some other expensive process until the first time it is needed. This pattern appears in the GoF catalog as "virtual proxy", an implementation strategy for the Proxy pattern. 
 
-Yes 
+Tactic of delaying the creation of an object, the calculation of a value, or some other expensive process until the first time it is needed. This pattern appears in the GoF catalog as "virtual proxy", an implementation strategy for the Proxy pattern.
 
-No 
+Yes
+
+No
 
 PoEAA[16]
 
-h3. Multiton 
+h3. Multiton
 
-Ensure a class has only named instances, and provide global point of access to them. 
+Ensure a class has only named instances, and provide global point of access to them.
 
-No 
+No
 
-No 
-
-N/A
-
-h3. Object pool 
-
-Avoid expensive acquisition and release of resources by recycling objects that are no longer in use. Can be considered a generalisation of connection pool and thread pool patterns. 
-
-No 
-
-No 
+No
 
 N/A
 
-h3. Prototype 
+h3. Object pool
 
-Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype. 
+Avoid expensive acquisition and release of resources by recycling objects that are no longer in use. Can be considered a generalisation of connection pool and thread pool patterns.
 
-Yes 
+No
 
-No 
-
-N/A
-
-h3. Resource acquisition is initialization 
-
-Ensure that resources are properly released by tying them to the lifespan of suitable objects. 
-
-No 
-
-No 
+No
 
 N/A
 
-h3 Singleton 
+h3. Prototype
 
-Ensure a class has only one instance, and provide a global point of access to it. 
+Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
 
-Yes 
+Yes
 
-Yes 
+No
+
+N/A
+
+h3. Resource acquisition is initialization
+
+Ensure that resources are properly released by tying them to the lifespan of suitable objects.
+
+No
+
+No
+
+N/A
+
+h3 Singleton
+
+Ensure a class has only one instance, and provide a global point of access to it.
+
+Yes
+
+Yes
 
 N/A
 
 
 
-h2. Structural patterns Name 
+h2. Structural patterns Name
 
-Description 
+Description
 
-In Design Patterns 
+In Design Patterns
 
-In Code Complete[14] 
+In Code Complete[14]
 
 Other
 
 
-h3. Adapter or Wrapper or Translator. 
+h3. Adapter or Wrapper or Translator.
 
-Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces. The enterprise integration pattern equivalent is the translator. 
+Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces. The enterprise integration pattern equivalent is the translator.
 
-Yes 
+Yes
 
-Yes 
-
-N/A
-
-h3. Bridge 
-
-Decouple an abstraction from its implementation allowing the two to vary independently. 
-
-Yes 
-
-Yes 
+Yes
 
 N/A
 
-h3. Composite 
+h3. Bridge
 
-Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly. 
+Decouple an abstraction from its implementation allowing the two to vary independently.
 
-Yes 
+Yes
 
-Yes 
-
-N/A
-
-h3. Decorator 
-
-Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality. 
-
-Yes 
-
-Yes 
+Yes
 
 N/A
 
-h3. Facade 
+h3. Composite
 
-Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use. 
+Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
 
-Yes 
+Yes
 
-Yes 
-
-N/A
-
-h3. Flyweight 
-
-Use sharing to support large numbers of similar objects efficiently. 
-
-Yes 
-
-No 
+Yes
 
 N/A
 
-h3. Front Controller 
+h3. Decorator
 
-The pattern relates to the design of Web applications. It provides a centralized entry point for handling requests. 
+Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality.
 
-No 
+Yes
 
-Yes 
-
-N/A
-
-h3. Module 
-
-Group several related elements, such as classes, singletons, methods, globally used, into a single conceptual entity. 
-
-No 
-
-No 
+Yes
 
 N/A
 
-h3. Proxy 
+h3. Facade
 
-Provide a surrogate or placeholder for another object to control access to it. 
+Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
 
-Yes 
+Yes
 
-No 
-
-N/A
-
-h3. Twin [17] 
-
-Twin allows to model multiple inheritance in programming languages that do not support this feature. 
-
-No 
-
-No 
+Yes
 
 N/A
 
-h2. Behavioral patterns Name 
+h3. Flyweight
 
-h3. Blackboard 
+Use sharing to support large numbers of similar objects efficiently.
 
-Generalized observer, which allows multiple readers and writers. Communicates information system-wide. 
+Yes
 
-No 
-
-No 
+No
 
 N/A
 
-h3. Chain of responsibility 
+h3. Front Controller
 
-Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it. 
+The pattern relates to the design of Web applications. It provides a centralized entry point for handling requests.
 
-Yes 
+No
 
-No 
-
-N/A
-
-h3. Command 
-
-Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations. 
-
-Yes 
-
-No 
+Yes
 
 N/A
 
-h3. Interpreter 
+h3. Module
 
-Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language. 
+Group several related elements, such as classes, singletons, methods, globally used, into a single conceptual entity.
 
-Yes 
+No
 
-No 
-
-N/A
-
-h3. Iterator 
-
-Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation. 
-
-Yes 
-
-Yes 
+No
 
 N/A
 
-h3. Mediator 
+h3. Proxy
 
-Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently. 
+Provide a surrogate or placeholder for another object to control access to it.
 
-Yes 
+Yes
 
-No 
-
-N/A
-
-h3. Memento 
-
-Without violating encapsulation, capture and externalize an object's internal state allowing the object to be restored to this state later. 
-
-Yes 
-
-No 
+No
 
 N/A
 
-h3. Null object 
+h3. Twin [17]
 
-Avoid null references by providing a default object. 
+Twin allows to model multiple inheritance in programming languages that do not support this feature.
 
-No 
+No
 
-No 
-
-N/A
-
-h3. Observer or Publish/subscribe 
-
-Define a one-to-many dependency between objects where a state change in one object results in all its dependents being notified and updated automatically. 
-
-Yes 
-
-Yes 
+No
 
 N/A
 
-h3. Servant 
+h2. Behavioral patterns Name
 
-Define common functionality for a group of classes 
+h3. Blackboard
 
-No 
+Generalized observer, which allows multiple readers and writers. Communicates information system-wide.
 
-No 
+No
 
-N/A
-
-h3. Specification 
-
-Recombinable business logic in a Boolean fashion 
-
-No 
-
-No 
+No
 
 N/A
 
-h3. State 
+h3. Chain of responsibility
 
-Allow an object to alter its behavior when its internal state changes. The object will appear to change its class. 
+Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
 
-Yes 
+Yes
 
-No 
-
-N/A
-
-h3. Strategy 
-
-Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it. 
-
-Yes 
-
-Yes 
+No
 
 N/A
 
-h3. Template method 
+h3. Command
 
-Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure. 
+Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.
 
-Yes 
+Yes
 
-Yes 
-
-N/A
-
-h3. Visitor 
-
-Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates. 
-
-Yes 
-
-No 
+No
 
 N/A
 
-h2. Concurrency patterns Name 
+h3. Interpreter
 
-h3. Active Object 
+Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
 
-Decouples method execution from method invocation that reside in their own thread of control. The goal is to introduce concurrency, by using asynchronous method invocation and a scheduler for handling requests. 
+Yes
 
-Yes 
-
-N/A
-
-h3. Balking 
-
-Only execute an action on an object when the object is in a particular state. 
-
-No 
+No
 
 N/A
 
-h3. Binding properties 
+h3. Iterator
 
-Combining multiple observers to force properties in different objects to be synchronized or coordinated in some way.[19] 
+Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 
-No 
+Yes
+
+Yes
 
 N/A
 
-h3. Double-checked locking 
+h3. Mediator
+
+Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.
+
+Yes
+
+No
+
+N/A
+
+h3. Memento
+
+Without violating encapsulation, capture and externalize an object's internal state allowing the object to be restored to this state later.
+
+Yes
+
+No
+
+N/A
+
+h3. Null object
+
+Avoid null references by providing a default object.
+
+No
+
+No
+
+N/A
+
+h3. Observer or Publish/subscribe
+
+Define a one-to-many dependency between objects where a state change in one object results in all its dependents being notified and updated automatically.
+
+Yes
+
+Yes
+
+N/A
+
+h3. Servant
+
+Define common functionality for a group of classes
+
+No
+
+No
+
+N/A
+
+h3. Specification
+
+Recombinable business logic in a Boolean fashion
+
+No
+
+No
+
+N/A
+
+h3. State
+
+Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
+Yes
+
+No
+
+N/A
+
+h3. Strategy
+
+Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+
+Yes
+
+Yes
+
+N/A
+
+h3. Template method
+
+Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+
+Yes
+
+Yes
+
+N/A
+
+h3. Visitor
+
+Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
+
+Yes
+
+No
+
+N/A
+
+h2. Concurrency patterns Name
+
+h3. Active Object
+
+Decouples method execution from method invocation that reside in their own thread of control. The goal is to introduce concurrency, by using asynchronous method invocation and a scheduler for handling requests.
+
+Yes
+
+N/A
+
+h3. Balking
+
+Only execute an action on an object when the object is in a particular state.
+
+No
+
+N/A
+
+h3. Binding properties
+
+Combining multiple observers to force properties in different objects to be synchronized or coordinated in some way.[19]
+
+No
+
+N/A
+
+h3. Double-checked locking
 
 Reduce the overhead of acquiring a lock by first testing the locking criterion (the 'lock hint') in an unsafe manner; only if that succeeds does the actual lock proceed.
 
-h3. 
+h3.
 
 h3. Can be unsafe when implemented in some language/hardware combinations. It can therefore sometimes be considered an anti-pattern.
 
-h3. 
+h3.
 
-Yes 
-
-N/A
-
-h3. Event-based asynchronous 
-
-Addresses problems with the asynchronous pattern that occur in multithreaded programs.[20] 
-
-No 
+Yes
 
 N/A
 
-h3. Guarded suspension 
+h3. Event-based asynchronous
 
-Manages operations that require both a lock to be acquired and a precondition to be satisfied before the operation can be executed. 
+Addresses problems with the asynchronous pattern that occur in multithreaded programs.[20]
 
-No 
-
-N/A
-
-h3. Join 
-
-Join-patterns provides a way to write concurrent, parallel and distributed programs by message passing. Compared to the use of threads and locks, this is a high level programming model. 
-
-No 
+No
 
 N/A
 
-h3. Lock 
+h3. Guarded suspension
 
-One thread puts a "lock" on a resource, preventing other threads from accessing or modifying it.[21] 
+Manages operations that require both a lock to be acquired and a precondition to be satisfied before the operation can be executed.
 
-No 
+No
+
+N/A
+
+h3. Join
+
+Join-patterns provides a way to write concurrent, parallel and distributed programs by message passing. Compared to the use of threads and locks, this is a high level programming model.
+
+No
+
+N/A
+
+h3. Lock
+
+One thread puts a "lock" on a resource, preventing other threads from accessing or modifying it.[21]
+
+No
 
 PoEAA[16]
 
-h3. Messaging design pattern (MDP) 
+h3. Messaging design pattern (MDP)
 
-Allows the interchange of information (i.e. messages) between components and applications. 
+Allows the interchange of information (i.e. messages) between components and applications.
 
-No 
-
-N/A
-
-h3. Monitor object 
-
-An object whose methods are subject to mutual exclusion, thus preventing multiple objects from erroneously trying to use it at the same time. 
-
-Yes 
+No
 
 N/A
 
-h3. Reactor 
+h3. Monitor object
 
-A reactor object provides an asynchronous interface to resources that must be handled synchronously. 
+An object whose methods are subject to mutual exclusion, thus preventing multiple objects from erroneously trying to use it at the same time.
 
-Yes 
-
-N/A
-
-h3. Read-write lock 
-
-Allows concurrent read access to an object, but requires exclusive access for write operations. 
-
-No 
+Yes
 
 N/A
 
-h3. Scheduler 
+h3. Reactor
 
-Explicitly control when threads may execute single-threaded code. 
+A reactor object provides an asynchronous interface to resources that must be handled synchronously.
 
-No 
-
-N/A
-
-h3. Thread pool 
-
-A number of threads are created to perform a number of tasks, which are usually organized in a queue. Typically, there are many more tasks than threads. Can be considered a special case of the object pool pattern. 
-
-No 
+Yes
 
 N/A
 
-h3. Thread-specific storage 
+h3. Read-write lock
 
-Static or "global" memory local to a thread. 
+Allows concurrent read access to an object, but requires exclusive access for write operations.
 
-Yes 
+No
+
+N/A
+
+h3. Scheduler
+
+Explicitly control when threads may execute single-threaded code.
+
+No
+
+N/A
+
+h3. Thread pool
+
+A number of threads are created to perform a number of tasks, which are usually organized in a queue. Typically, there are many more tasks than threads. Can be considered a special case of the object pool pattern.
+
+No
+
+N/A
+
+h3. Thread-specific storage
+
+Static or "global" memory local to a thread.
+
+Yes
 
 N/A
 
