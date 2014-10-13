@@ -16,7 +16,7 @@ Not saying the design pattern is not necessary, however, it can be simplified a 
 Let's take the strategy pattern as an example, we can easily inject some 'strategy' with lambda,
 with no more class to be defined.
 
-We can also simplify the state patter with a 2 dimension hash table:
+We can also simplify the state design pattern with a 2 dimension hash table:
 
 # (state name -> a hash table), the table holds the input under a certain state.
 # (impulse -> a lambda function)

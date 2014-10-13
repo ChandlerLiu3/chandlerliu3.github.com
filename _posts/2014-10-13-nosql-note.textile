@@ -1,0 +1,52 @@
+---
+layout: post
+title: "NoSQL note"
+description: ""
+category: 
+tags: [big data, NoSql]
+---
+{% include JB/setup %}
+
+h2. CAP
+
+# C: Consistence, all clients always have the same view of the data
+# A: Availability, each client can always read and write
+# P: Partition Tolerance, the system works well despite physical network partitions.
+
+h3. CP (Strong consistent and partition tolerance)
+
+typically set up in master/slave structure between servers,
+
+Instances:
+
+# BigTable
+# MongoDB (this can be eventual consistent, for better availability)
+# HBase
+
+h3. AP (available and partition tolerance)
+
+typically set up in peer to peer (P2P) structure, they are eventual consistent
+
+Instances:
+# CouchDB
+# Cassandra (this can be set to strong consistent)
+
+
+h3. AC (high availability and strong consistence)
+
+Instances:
+
+# MySql
+# PostgreSQL
+
+
+h2. database in memory
+
+
+# Redis, CP, popular, used by sina, zhihu, it is paired with MySql
+# memcached
+# membase: CP, cached the SQLite into memory
+
+
+
+
